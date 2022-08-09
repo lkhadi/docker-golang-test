@@ -1,0 +1,11 @@
+server {
+   server_name test.id;
+   location / {
+        proxy_pass http://localhost:8990;
+   }
+
+    listen [::]:80;
+    listen 80;
+
+
+}

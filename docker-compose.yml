@@ -1,0 +1,10 @@
+version: '2.1'
+services:
+  go-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: go-test
+#    restart: "always"
+    ports:
+      - "8990:8990"
